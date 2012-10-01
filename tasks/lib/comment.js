@@ -1,35 +1,10 @@
-/*
- * grunt
- * http://gruntjs.com/
- *
- * Copyright (c) 2012 "Cowboy" Ben Alman
- * Licensed under the MIT license.
- * http://benalman.com/about/license/
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-'use strict';
+The grunt source has moved!
 
-exports.init = function(/*grunt*/) {
-  var exports = {};
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  // Return the given source cude with any leading banner comment stripped.
-  exports.stripBanner = function(src, options) {
-    if (!options) { options = {}; }
-    var m = [];
-    if (options.line) {
-      // Strip // ... leading banners.
-      m.push('(?:.*\\/\\/.*\\n)*\\s*');
-    }
-    if (options.block) {
-      // Strips all /* ... */ block comment banners.
-      m.push('\\/\\*[\\s\\S]*?\\*\\/');
-    } else {
-      // Strips only /* ... */ block comment banners, excluding /*! ... */.
-      m.push('\\/\\*[^!][\\s\\S]*?\\*\\/');
-    }
-    var re = new RegExp('^\\s*(?:' + m.join('|') + ')\\s*', '');
-    return src.replace(re, '');
-  };
-
-  return exports;
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/tasks/lib/comment.js

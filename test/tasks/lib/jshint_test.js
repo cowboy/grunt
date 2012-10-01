@@ -1,22 +1,10 @@
-'use strict';
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-var grunt = require('../../../lib/grunt');
-var jshint = require('../../../tasks/lib/jshint').init(grunt);
+The grunt source has moved!
 
-// In case the grunt being used to test is different than the grunt being
-// tested, initialize the task and config subsystems.
-if (grunt.task.searchDirs.length === 0) {
-  grunt.task.init([]);
-  grunt.config.init({});
-}
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-exports['jshint'] = function(test) {
-  test.expect(1);
-  grunt.log.muted = true;
-
-  test.doesNotThrow(function() {
-    jshint.lint(grunt.file.read('test/fixtures/lint.txt'));
-  }, 'It should not blow up if an error occurs on character 0.');
-
-  test.done();
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/test/tasks/lib/jshint_test.js

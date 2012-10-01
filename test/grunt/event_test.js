@@ -1,18 +1,10 @@
-'use strict';
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-var grunt = require('../../lib/grunt');
+The grunt source has moved!
 
-exports['event'] = function(test) {
-  test.expect(3);
-  grunt.event.on('test.foo', function(a, b, c) {
-    // This should get executed once (emit test.foo).
-    test.equals(a + b + c, '123', 'Should have received the correct arguments.');
-  });
-  grunt.event.on('test.*', function(a, b, c) {
-    // This should get executed twice (emit test.foo and test.bar).
-    test.equals(a + b + c, '123', 'Should have received the correct arguments.');
-  });
-  grunt.event.emit('test.foo', '1', '2', '3');
-  grunt.event.emit('test.bar', '1', '2', '3');
-  test.done();
-};
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
+
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/test/grunt/event_test.js

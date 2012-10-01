@@ -1,5 +1,10 @@
-[Grunt homepage](http://gruntjs.com/) | [Documentation table of contents](toc.md)
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-# [The grunt API](api.md) / grunt.util
+The grunt source has moved!
 
-_Note: `grunt.utils` was renamed to `grunt.util` and deprecated in grunt v0.4.0. Please ensure that your custom tasks are are up-to-date, and update your links to refer to the [grunt.util documentation](api_util.md)._
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
+
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/docs/api_utils.md

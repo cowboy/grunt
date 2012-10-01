@@ -1,9 +1,10 @@
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-var code = Number(process.argv[2]);
+The grunt source has moved!
 
-process.stdout.write('stdout\n');
-process.stderr.write('stderr\n');
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-// Use instead of process.exit to ensure stdout/stderr are flushed
-// before exiting in Windows (Tested in Node.js v0.8.7)
-require('../../lib/util/exit').exit(code);
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/test/fixtures/spawn.js

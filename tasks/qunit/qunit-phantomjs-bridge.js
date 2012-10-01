@@ -1,58 +1,10 @@
-/*
- * grunt
- * http://gruntjs.com/
- *
- * Copyright (c) 2012 "Cowboy" Ben Alman
- * Licensed under the MIT license.
- * http://benalman.com/about/license/
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-/*global QUnit:true, alert:true*/
+The grunt source has moved!
 
-'use strict';
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-// Don't re-order tests.
-QUnit.config.reorder = false;
-// Run tests serially, not in parallel.
-QUnit.config.autorun = false;
-
-// Send messages to the parent PhantomJS process via alert! Good times!!
-function sendMessage() {
-  var args = [].slice.call(arguments);
-  alert(JSON.stringify(args));
-}
-
-// These methods connect QUnit to PhantomJS.
-QUnit.log = function(obj) {
-  // What is this I don’t even
-  if (obj.message === '[object Object], undefined:undefined') { return; }
-  // Parse some stuff before sending it.
-  var actual = QUnit.jsDump.parse(obj.actual);
-  var expected = QUnit.jsDump.parse(obj.expected);
-  // Send it.
-  sendMessage('qunit.log', obj.result, actual, expected, obj.message, obj.source);
-};
-
-QUnit.testStart = function(obj) {
-  sendMessage('qunit.testStart', obj.name);
-};
-
-QUnit.testDone = function(obj) {
-  sendMessage('qunit.testDone', obj.name, obj.failed, obj.passed, obj.total);
-};
-
-QUnit.moduleStart = function(obj) {
-  sendMessage('qunit.moduleStart', obj.name);
-};
-
-QUnit.moduleDone = function(obj) {
-  sendMessage('qunit.moduleDone', obj.name, obj.failed, obj.passed, obj.total);
-};
-
-QUnit.begin = function() {
-  sendMessage('qunit.begin');
-};
-
-QUnit.done = function(obj) {
-  sendMessage('qunit.done', obj.failed, obj.passed, obj.total, obj.runtime);
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/tasks/qunit/qunit-phantomjs-bridge.js

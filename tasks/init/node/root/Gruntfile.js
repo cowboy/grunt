@@ -1,43 +1,10 @@
-'use strict';
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-module.exports = function(grunt) {
+The grunt source has moved!
 
-  // Project configuration.
-  grunt.initConfig({
-    nodeunit: {
-      files: ['test/**/*.js'],
-    },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      gruntfile: {
-        src: 'Gruntfile.js'
-      },
-      lib: {
-        src: ['lib/**/*.js']
-      },
-      test: {
-        src: ['test/**/*.js']
-      },
-    },
-    watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
-      },
-      lib: {
-        files: '<%= jshint.lib.src %>',
-        tasks: ['jshint:lib', 'nodeunit']
-      },
-      test: {
-        files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'nodeunit']
-      },
-    },
-  });
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
-
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/tasks/init/node/root/Gruntfile.js

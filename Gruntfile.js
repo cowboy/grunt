@@ -1,57 +1,10 @@
-/*
- * grunt
- * http://gruntjs.com/
- *
- * Copyright (c) 2012 "Cowboy" Ben Alman
- * Licensed under the MIT license.
- * http://benalman.com/about/license/
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-'use strict';
+The grunt source has moved!
 
-module.exports = function(grunt) {
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  // Project configuration.
-  grunt.initConfig({
-    nodeunit: {
-      all: ['test/{grunt,tasks,util}/**/*.js']
-    },
-    jshint: {
-      all: [
-        'Gruntfile.js',
-        'lib/**/*.js',
-        'tasks/*.js',
-        'tasks/*/*.js',
-        'tasks/lib/**/*.js',
-        '<%= nodeunit.all %>'
-      ],
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: true,
-        boss: true,
-        eqnull: true,
-        node: true,
-        es5: true
-      }
-    },
-    watch: {
-      scripts: {
-        files: ['<%= jshint.all %>'],
-        tasks: ['jshint', 'nodeunit']
-      }
-    }
-  });
-
-  // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
-
-  // Unregister unused tasks.
-  grunt.unregisterTasks('concat', 'uglify', 'init', 'server', 'qunit');
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/Gruntfile.js

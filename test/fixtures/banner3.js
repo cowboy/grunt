@@ -1,10 +1,10 @@
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-// This is
-// A sample
-// Banner
+The grunt source has moved!
 
-// But this is not
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-/* And neither
- * is this
- */
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/test/fixtures/banner3.js

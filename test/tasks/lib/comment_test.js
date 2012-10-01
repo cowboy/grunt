@@ -1,28 +1,10 @@
-'use strict';
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-var grunt = require('../../../lib/grunt');
-var comment = require('../../../tasks/lib/comment').init(grunt);
+The grunt source has moved!
 
-// In case the grunt being used to test is different than the grunt being
-// tested, initialize the task and config subsystems.
-if (grunt.task.searchDirs.length === 0) {
-  grunt.task.init([]);
-  grunt.config.init({});
-}
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-exports['comment'] = {
-  'stripBanner': function(test) {
-    test.expect(7);
-    var src = grunt.file.read('test/fixtures/banner.js');
-    test.equal(comment.stripBanner(src), '// Comment\n\n/* Comment */\n', 'It should strip the top banner.');
-    test.equal(comment.stripBanner(src, {block: true}), '// Comment\n\n/* Comment */\n', 'It should strip the top banner.');
-    src = grunt.file.read('test/fixtures/banner2.js');
-    test.equal(comment.stripBanner(src), '\n/*! SAMPLE\n * BANNER */\n\n// Comment\n\n/* Comment */\n', 'It should not strip the top banner.');
-    test.equal(comment.stripBanner(src, {block: true}), '// Comment\n\n/* Comment */\n', 'It should strip the top banner.');
-    src = grunt.file.read('test/fixtures/banner3.js');
-    test.equal(comment.stripBanner(src), '\n// This is\n// A sample\n// Banner\n\n// But this is not\n\n/* And neither\n * is this\n */\n', 'It should not strip the top banner.');
-    test.equal(comment.stripBanner(src, {block: true}), '\n// This is\n// A sample\n// Banner\n\n// But this is not\n\n/* And neither\n * is this\n */\n', 'It should not strip the top banner.');
-    test.equal(comment.stripBanner(src, {line: true}), '// But this is not\n\n/* And neither\n * is this\n */\n', 'It should strip the top banner.');
-    test.done();
-  }
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/test/tasks/lib/comment_test.js

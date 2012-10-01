@@ -1,47 +1,10 @@
-'use strict';
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-var grunt = require('../../../lib/grunt');
-var git = require('../../../tasks/lib/git').init(grunt);
+The grunt source has moved!
 
-// In case the grunt being used to test is different than the grunt being
-// tested, initialize the task and config subsystems.
-if (grunt.task.searchDirs.length === 0) {
-  grunt.task.init([]);
-  grunt.config.init({});
-}
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-exports['git.githubUrl'] = {
-  'no args': function(test) {
-    test.expect(1);
-    test.equal(git.githubUrl(), null, 'It should return null.');
-    test.done();
-  },
-  'nonsensical args': function(test) {
-    test.expect(3);
-    test.equal(git.githubUrl(''), null, 'It should return null.');
-    test.equal(git.githubUrl('omgfoo'), null, 'It should return null.');
-    test.equal(git.githubUrl('http://benalman.com/'), null, 'It should return null.');
-    test.done();
-  },
-  'no suffix': function(test) {
-    test.expect(5);
-    test.equal(git.githubUrl('git@github.com:cowboy/grunt.git'), 'https://github.com/cowboy/grunt', 'It should convert the URI.');
-    test.equal(git.githubUrl('https://cowboy@github.com/cowboy/grunt.git'), 'https://github.com/cowboy/grunt', 'It should convert the URI.');
-    test.equal(git.githubUrl('git://github.com/cowboy/grunt.git'), 'https://github.com/cowboy/grunt', 'It should convert the URI.');
-    test.equal(git.githubUrl('http://github.com/paulirish/newsite'), 'https://github.com/paulirish/newsite', 'It should convert the URI.');
-    test.equal(git.githubUrl('http://github.com/paulirish/newsite/'), 'https://github.com/paulirish/newsite', 'It should convert the URI.');
-    test.done();
-  },
-  'suffix': function(test) {
-    test.expect(7);
-    test.equal(git.githubUrl('git@github.com:cowboy/grunt.git', 'issues'), 'https://github.com/cowboy/grunt/issues', 'It should convert the URI.');
-    test.equal(git.githubUrl('https://cowboy@github.com/cowboy/grunt.git', 'issues'), 'https://github.com/cowboy/grunt/issues', 'It should convert the URI.');
-    test.equal(git.githubUrl('git://github.com/cowboy/grunt.git', 'issues'), 'https://github.com/cowboy/grunt/issues', 'It should convert the URI.');
-    test.equal(git.githubUrl('http://github.com/paulirish/newsite', 'issues'), 'https://github.com/paulirish/newsite/issues', 'It should convert the URI.');
-    test.equal(git.githubUrl('http://github.com/paulirish/newsite/', 'issues'), 'https://github.com/paulirish/newsite/issues', 'It should convert the URI.');
-    test.equal(git.githubUrl('http://github.com/paulirish/newsite', '/issues'), 'https://github.com/paulirish/newsite/issues', 'It should convert the URI.');
-    test.equal(git.githubUrl('http://github.com/paulirish/newsite/', '/issues'), 'https://github.com/paulirish/newsite/issues', 'It should convert the URI.');
-    test.done();
-  }
-};
-
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/test/tasks/lib/git_test.js

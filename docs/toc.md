@@ -1,34 +1,10 @@
-[Grunt homepage](http://gruntjs.com/)
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-# Documentation table of contents
+The grunt source has moved!
 
-## Getting started
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-* [Getting started](getting_started.md) - A guide to configuring grunt for your project.
-* [Example Gruntfiles](example_gruntfiles.md) - A few samples, to help you get started.
-* [The grunt API](api.md) - Complete API documentation here!
-* [FAQ](faq.md) - Frequently asked questions, along with their answers.
-* [Exit codes](exit_codes.md) - A list of all built-in grunt exit codes.
-
-## Built-in tasks
-
-* [concat](task_concat.md) - Concatenate files.
-* [init](task_init.md) - Generate project scaffolding from a predefined template.
-* [lint](task_lint.md) - Validate files with [JSHint][jshint].
-* [min](task_min.md) - Minify files with [UglifyJS][uglify].
-* [qunit](task_qunit.md) - Run [QUnit][qunit] unit tests in a headless [PhantomJS][phantom] instance.
-* [server](task_server.md) - Start a static web server.
-* [test](task_test.md) - Run unit tests with [Nodeunit][nodeunit].
-* [watch](task_watch.md) - Run predefined tasks whenever watched files change.
-* _(more documentation coming soon)_
-
-[jshint]: http://www.jshint.com/
-[uglify]: https://github.com/mishoo/UglifyJS/
-[nodeunit]: https://github.com/caolan/nodeunit
-[qunit]: http://docs.jquery.com/QUnit
-[phantom]: http://www.phantomjs.org/
-
-## Development
-
-* [Contributing to grunt](contributing.md) - Development advice.
-* [Grunt plugins](plugins.md) - Developing and sharing grunt plugins.
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/docs/toc.md

@@ -1,27 +1,10 @@
-# {%= name %}
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-{%= description %}
+The grunt source has moved!
 
-## Getting Started
-Install the module with: `npm install {%= name %}`
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-```javascript
-var {%= js_safe_name %} = require('{%= name %}');
-{%= js_safe_name %}.awesome(); // "awesome"
-```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
-
-## Release History
-_(Nothing yet)_
-
-## License
-Copyright (c) {%= grunt.template.today('yyyy') %} {%= author_name %}  
-Licensed under the {%= licenses.join(', ') %} license{%= licenses.length === 1 ? '' : 's' %}.
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/devel/tasks/init/node/root/README.md
