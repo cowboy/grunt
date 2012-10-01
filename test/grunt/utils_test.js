@@ -1,22 +1,10 @@
-var grunt = require('../../lib/grunt');
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-exports['utils'] = {
-  'linefeed': function(test) {
-    test.expect(1);
-    if (process.platform === 'win32') {
-      test.equal(grunt.utils.linefeed, '\r\n', 'linefeed should be operating-system appropriate.');
-    } else {
-      test.equal(grunt.utils.linefeed, '\n', 'linefeed should be operating-system appropriate.');
-    }
-    test.done();
-  },
-  'normalizelf': function(test) {
-    test.expect(1);
-    if (process.platform === 'win32') {
-      test.equal(grunt.utils.normalizelf('foo\nbar\r\nbaz\r\n\r\nqux\n\nquux'), 'foo\r\nbar\r\nbaz\r\n\r\nqux\r\n\r\nquux', 'linefeeds should be normalized');
-    } else {
-      test.equal(grunt.utils.normalizelf('foo\nbar\r\nbaz\r\n\r\nqux\n\nquux'), 'foo\nbar\nbaz\n\nqux\n\nquux', 'linefeeds should be normalized');
-    }
-    test.done();
-  }
-};
+The grunt source has moved!
+
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
+
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/test/grunt/utils_test.js

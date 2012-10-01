@@ -1,43 +1,10 @@
-/*
- * grunt
- * https://github.com/cowboy/grunt
- *
- * Copyright (c) 2012 "Cowboy" Ben Alman
- * Licensed under the MIT license.
- * http://benalman.com/about/license/
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-module.exports = function(grunt) {
+The grunt source has moved!
 
-  // ==========================================================================
-  // TASKS
-  // ==========================================================================
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  grunt.registerMultiTask('concat', 'Concatenate files.', function() {
-    var files = grunt.file.expandFiles(this.file.src);
-    // Concat specified files.
-    var src = grunt.helper('concat', files, {separator: this.data.separator});
-    grunt.file.write(this.file.dest, src);
-
-    // Fail task if errors were logged.
-    if (this.errorCount) { return false; }
-
-    // Otherwise, print a success message.
-    grunt.log.writeln('File "' + this.file.dest + '" created.');
-  });
-
-  // ==========================================================================
-  // HELPERS
-  // ==========================================================================
-
-  // Concat source files and/or directives.
-  grunt.registerHelper('concat', function(files, options) {
-    options = grunt.utils._.defaults(options || {}, {
-      separator: grunt.utils.linefeed
-    });
-    return files ? files.map(function(filepath) {
-      return grunt.task.directive(filepath, grunt.file.read);
-    }).join(grunt.utils.normalizelf(options.separator)) : '';
-  });
-
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/concat.js

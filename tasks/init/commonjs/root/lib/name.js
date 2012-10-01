@@ -1,15 +1,10 @@
-/*
- * {%= name %}
- * {%= homepage %}
- *
- * Copyright (c) {%= grunt.template.today('yyyy') %} {%= author_name %}
- * Licensed under the {%= licenses.join(', ') %} license{%= licenses.length === 1 ? '' : 's' %}.
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-(function(exports) {
+The grunt source has moved!
 
-  exports.awesome = function() {
-    return 'awesome';
-  };
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-}(typeof exports === 'object' && exports || this));
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/init/commonjs/root/lib/name.js

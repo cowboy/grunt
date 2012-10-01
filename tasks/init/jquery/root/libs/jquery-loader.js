@@ -1,14 +1,10 @@
-(function() {
-  // Get any jquery=___ param from the query string.
-  var jqversion = location.search.match(/[?&]jquery=(.*?)(?=&|$)/);
-  var path;
-  if (jqversion) {
-    // A version was specified, load that version from code.jquery.com.
-    path = 'http://code.jquery.com/jquery-' + jqversion[1] + '.js';
-  } else {
-    // No version was specified, load the local version.
-    path = '../libs/jquery/jquery.js';
-  }
-  // This is the only time I'll ever use document.write, I promise!
-  document.write('<script src="' + path + '"></script>');
-}());
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
+
+The grunt source has moved!
+
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
+
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/init/jquery/root/libs/jquery-loader.js

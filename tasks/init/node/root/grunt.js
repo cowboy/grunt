@@ -1,39 +1,10 @@
-module.exports = function(grunt) {
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-  // Project configuration.
-  grunt.initConfig({
-    pkg: '<json:package.json>',
-    test: {
-      files: ['test/**/*.js']
-    },
-    lint: {
-      files: ['grunt.js', 'lib/**/*.js', 'test/**/*.js']
-    },
-    watch: {
-      files: '<config:lint.files>',
-      tasks: 'default'
-    },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        node: true
-      },
-      globals: {
-        exports: true
-      }
-    }
-  });
+The grunt source has moved!
 
-  // Default task.
-  grunt.registerTask('default', 'lint test');
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/init/node/root/grunt.js

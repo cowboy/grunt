@@ -1,30 +1,10 @@
-/*
- * {%= full_name %}
- * {%= homepage %}
- *
- * Copyright (c) {%= grunt.template.today('yyyy') %} {%= author_name %}
- * Licensed under the {%= licenses.join(', ') %} license{%= licenses.length === 1 ? '' : 's' %}.
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-module.exports = function(grunt) {
+The grunt source has moved!
 
-  // Please see the grunt documentation for more information regarding task and
-  // helper creation: https://github.com/cowboy/grunt/blob/master/docs/toc.md
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  // ==========================================================================
-  // TASKS
-  // ==========================================================================
-
-  grunt.registerTask('{%= short_name %}', 'Your task description goes here.', function() {
-    grunt.log.write(grunt.helper('{%= short_name %}'));
-  });
-
-  // ==========================================================================
-  // HELPERS
-  // ==========================================================================
-
-  grunt.registerHelper('{%= short_name %}', function() {
-    return '{%= short_name %}!!!';
-  });
-
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/init/gruntplugin/root/tasks/name.js

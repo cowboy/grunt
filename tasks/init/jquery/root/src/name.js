@@ -1,28 +1,10 @@
-/*
- * {%= name %}
- * {%= homepage %}
- *
- * Copyright (c) {%= grunt.template.today('yyyy') %} {%= author_name %}
- * Licensed under the {%= licenses.join(', ') %} license{%= licenses.length === 1 ? '' : 's' %}.
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-(function($) {
+The grunt source has moved!
 
-  // Collection method.
-  $.fn.awesome = function() {
-    return this.each(function() {
-      $(this).html('awesome');
-    });
-  };
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  // Static method.
-  $.awesome = function() {
-    return 'awesome';
-  };
-
-  // Custom selector.
-  $.expr[':'].awesome = function(elem) {
-    return elem.textContent.indexOf('awesome') >= 0;
-  };
-
-}(jQuery));
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/init/jquery/root/src/name.js

@@ -1,48 +1,10 @@
-/*
- * grunt
- * https://github.com/cowboy/grunt
- *
- * Copyright (c) 2012 "Cowboy" Ben Alman
- * Licensed under the MIT license.
- * http://benalman.com/about/license/
- */
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-module.exports = function(grunt) {
+The grunt source has moved!
 
-  // Project configuration.
-  grunt.initConfig({
-    test: {
-      all: ['test/**/*.js']
-    },
-    lint: {
-      all: ['grunt.js', 'lib/**/*.js', 'tasks/*.js', 'tasks/*/*.js', 'test/**/*.js']
-    },
-    watch: {
-      scripts: {
-        files: '<config:lint.all>',
-        tasks: 'lint test'
-      }
-    },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        node: true,
-        es5: true
-      },
-      globals: {}
-    }
-  });
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-  // Default task.
-  grunt.registerTask('default', 'lint test');
-
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/grunt.js

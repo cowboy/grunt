@@ -1,21 +1,10 @@
-var grunt = require('../../lib/grunt');
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-// In case the grunt being used to test is different than the grunt being
-// tested, initialize the task and config subsystems.
-if (grunt.task.searchDirs.length === 0) {
-  grunt.task.init([]);
-  grunt.config.init({});
-}
+The grunt source has moved!
 
-exports['concat'] = function(test) {
-  test.expect(1);
-  grunt.registerHelper('test_helper', function(a, b) { return a + b; });
-  var files = [
-    'test/fixtures/a.js',
-    '<test_helper:x:y>',
-    'test/fixtures/b.js'
-  ];
-  var lf = grunt.utils.linefeed;
-  test.equal(grunt.helper('concat', files), 'var a = 1;\n' + lf + 'xy' + lf + 'var b = 2;\n', 'It should concatenate files and directives.');
-  test.done();
-};
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
+
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/test/tasks/concat_test.js

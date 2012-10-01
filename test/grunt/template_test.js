@@ -1,20 +1,10 @@
-var grunt = require('../../lib/grunt');
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-exports['template'] = {
-  'process': function(test) {
-    test.expect(4);
-    var obj = {
-      foo: 'c',
-      bar: 'b<%= foo %>d',
-      baz: 'a<%= bar %>e'
-    };
+The grunt source has moved!
 
-    test.equal(grunt.template.process('<%= foo %>', obj), 'c', 'should retrieve value.');
-    test.equal(grunt.template.process('<%= bar %>', obj), 'bcd', 'should recurse.');
-    test.equal(grunt.template.process('<%= baz %>', obj), 'abcde', 'should recurse.');
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-    obj.foo = '<% oops %';
-    test.equal(grunt.template.process('<%= baz %>', obj), 'ab<% oops %de', 'should not explode.');
-    test.done();
-  }
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/test/grunt/template_test.js

@@ -1,34 +1,10 @@
-var grunt = require('grunt');
+Grunt: a task-based command line build tool for JavaScript projects.  
+http://gruntjs.com/
 
-/*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
+The grunt source has moved!
 
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
+Please update your remotes and links to the new location:  
+https://github.com/gruntjs/grunt
 
-exports['{%= short_name %}'] = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'helper': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(grunt.helper('{%= short_name %}'), '{%= short_name %}!!!', 'should return the correct value.');
-    test.done();
-  }
-};
+This file (if it still exists) might live at:  
+https://github.com/gruntjs/grunt/blob/master/tasks/init/gruntplugin/root/test/name_test.js
