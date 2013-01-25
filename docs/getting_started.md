@@ -6,5 +6,5 @@ The grunt source has moved!
 Please update your remotes and links to the new location:  
 https://github.com/gruntjs/grunt
 
-This file (if it still exists) might live at:  
-https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md
+The recent version of Getting Started can be found in the wiki:
+https://github.com/gruntjs/grunt/wiki/Getting-started
